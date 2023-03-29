@@ -10,6 +10,10 @@ class program
         validatePinCode.Validate("A533002");
         validatePinCode.Validate("533002A");
         validatePinCode.Validate("400 088");
+        ValidateEmailID validateEmailID = new ValidateEmailID();
+        validateEmailID.ValidateEmail("anandsai298@gmail.com");
+        validateEmailID.ValidateEmail("anandsai298@gmail.co.in");
+        validateEmailID.ValidateEmail("anandsai298@gmai34l.com");
     }
 }
 
