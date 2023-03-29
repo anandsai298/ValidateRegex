@@ -12,7 +12,7 @@ namespace ValidateRegex
         public static string NAME = "^[A-Z]{1}[a-z]{2,}$";
         public static string PHONE_NUMBER = "^[6-9]{1}[0-9]{9}$";
         public static string EMAIL_ID = "^[0-9A-Za-z]+[.+_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][A-Za-z]{2,3}([.][a-zA-Z]{2,3}){0,1}$";
-        public static string PASSWORD = "^[A-z]{1}[a-zA-Z0-9]{7,}$";
+        public static string PASSWORD = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#$%&*+]).{8,}$";
         public void Validate_FN(string fn)
         {
             if (Regex.IsMatch(fn, NAME))

@@ -26,8 +26,9 @@ class program
         validateRegistration.Validate_EmailId("anand298@gmail.co.in");//pass
         validateRegistration.Validate_EmailId("Ask143@gmail7.com");//fail
         validateRegistration.Validate_Password("Here1234");//pass
-        validateRegistration.Validate_Password("here#123");//fail
+        validateRegistration.Validate_Password("Here#123");//fail
         validateRegistration.Validate_Password("ASKAR143");//pass
+        validateRegistration.Validate_Password("Here@1234");
     }
 }
 
